@@ -1,0 +1,82 @@
+h1,h3{
+    text-align: center;
+}
+header {
+    background-color: #4caf50;
+    text-align: center;
+    padding: 20px 10px;
+}
+/* Основные стили для тела страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Заголовок игры */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Стили для области вопроса */
+.question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Стили для области ответов */
+.answer-area {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стили для текста ответов */
+.answer {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #2ecc71;
+    border-radius: 5px;
+    background-color: #dff9e8;
+    width: 80%;
+    text-align: center;
+}
+
+/* Стили для сообщения о результате */
+.result {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #e74c3c;
+}
