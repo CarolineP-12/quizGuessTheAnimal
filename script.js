@@ -50,7 +50,7 @@ function checkAnswer(selectedOption) {
     }, 3000); // Пауза перед показом следующего вопроса
 }
 
-// Начинаем игру при нажатии на первую кнопку
+// Начинаем игру при нажатии на любую кнопку
 buttons.forEach(button => {
     button.addEventListener("click", function() {
         currentQuestionIndex = 0; // Сбрасываем индекс вопросов
