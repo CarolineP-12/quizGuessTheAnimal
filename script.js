@@ -1,8 +1,5 @@
-let info = document.querySelector(".info");
-let b1 = document.querySelector(".b-1");
-let b2 = document.querySelector(".b-2");
-let b3 = document.querySelector(".b-3");
-
+  let info = document.querySelector(".info");
+let buttons = document.querySelectorAll("button"); // Получаем все кнопки
 let questions = [
     {
         question: "Это самое большое наземное животное на планете. Какое это животное?",
@@ -19,23 +16,19 @@ let questions = [
         options: ["Ящерица", "Уж", "Хамелеон"],
         answer: "Хамелеон"
     }
-
 ];
-
 let currentQuestionIndex = 0;
-
 function displayQuestion() {
     if (currentQuestionIndex < questions.length) {
         let question = questions[currentQuestionIndex];
         info.innerHTML = `<h2>${question.question}</h2>`;
-        question.options.forEach((option, index) => {
+        question.options.forEach((option) => {
             info.innerHTML += `<button class="option" onclick="checkAnswer('${option}')">${option}</button>`;
         });
     } else {
         info.innerHTML = "<h2>Игра окончена!</h2>";
     }
 }
-
 function checkAnswer(selectedOption) {
     let question = questions[currentQuestionIndex];
     if (selectedOption === question.answer) {
@@ -49,7 +42,6 @@ function checkAnswer(selectedOption) {
         displayQuestion(); // Показываем следующий вопрос
     }, 3000); // Пауза перед показом следующего вопроса
 }
-
 // Начинаем игру при нажатии на любую кнопку
 buttons.forEach(button => {
     button.addEventListener("click", function() {
