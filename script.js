@@ -51,7 +51,9 @@ function checkAnswer(selectedOption) {
 }
 
 // Начинаем игру при нажатии на первую кнопку
-b1.addEventListener("click", function() {
-    currentQuestionIndex = 0; // Сбрасываем индекс вопросов
-    displayQuestion(); // Показываем первый вопрос
+buttons.forEach(button => {
+    button.addEventListener("click", function() {
+        currentQuestionIndex = 0; // Сбрасываем индекс вопросов
+        displayQuestion(); // Показываем первый вопрос
+    });
 });
